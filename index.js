@@ -3,6 +3,9 @@ const app = express();
 
 const PORT = 4001;
 
+app.get('/' , (req,res)=>{
+    res.send('There are 2 routes , r1 and r2');
+})
 app.get('/r1', (req, res) => {
     res.send('Backend Route 1 ');
 });
